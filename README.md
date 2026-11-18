@@ -17,9 +17,16 @@ Official source code for the paper:
 - **Spectral / Fourier Feature Mapping** to alleviate spectral bias and capture multi-scale structural patterns across tensor modes;
 - **Context-Aware Gating** to adaptively modulate latent mode interactions during neural Tucker reconstruction.
 
+## Datasets & Availability
+
+The benchmark tensors and train/validation/test splits evaluated in this work strictly follow the experimental protocol established in **Auto-Encoding Neural Tucker Factorization** ([Tang et al., *IEEE TKDE* 2025](https://doi.org/10.1109/TKDE.2025.3590198)).
+
+> **Note:** As the preprocessed benchmark splits were curated by the authors of the upstream study and are not authorized for third-party redistribution, **this repository releases the model implementation only and does not host or distribute the dataset files** (please do not open issues or email this repository's maintainers requesting the raw/split data).  
+> For dataset access or preprocessing inquiries, please refer to the original paper and contact the corresponding author(s) of **Tang et al. (*IEEE TKDE*, 2025)** directly.
+
 ## Citation
 
-If you find this repository useful in your research, please consider citing:
+If you find this code useful in your research, please consider citing our paper (and the upstream benchmark paper for the experimental protocol):
 
 ```bibtex
 @INPROCEEDINGS{wang2026sgntf,
@@ -29,6 +36,17 @@ If you find this repository useful in your research, please consider citing:
   year      = {2026},
   pages     = {821--824},
   doi       = {10.1109/ICCEA69962.2026.11743580}
+}
+
+@ARTICLE{tang2025autoencoding,
+  author  = {Tang, Peng and Luo, Xin and Woodcock, Jim},
+  journal = {IEEE Transactions on Knowledge and Data Engineering},
+  title   = {Auto-Encoding Neural Tucker Factorization},
+  year    = {2025},
+  volume  = {37},
+  number  = {10},
+  pages   = {5795--5807},
+  doi     = {10.1109/TKDE.2025.3590198}
 }
 ```
 
